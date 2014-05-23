@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#first build dnsmasq
+dnsmasq/build
+
+#build rundeckmaster
+rundeckmaster/build
+
+#build rundeckclient
+rundeckclient/build

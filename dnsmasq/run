@@ -1,0 +1,3 @@
+#!/bin/bash
+
+docker run -d -h inovex-dns --dns=172.17.0.2 --name="inovex-dns" -P inovex-dnsmasq 

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#start dns server
+dnsmasq/run
+
+#start rundeckmaster
+rundeckmaster/run
+
+#start rundeckclients
+rundeckclient/run

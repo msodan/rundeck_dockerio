@@ -1,0 +1,240 @@
+
+rundeck_client_4.foo.bar:
+  tags: 'test'
+  osFamily: unix RHEL
+  username: root
+  osArch: x86_64
+  osVersion: 2.6.32-431.el6.x86_64
+  description: cops test server
+  nodename: 
+  hostname: 172.17.0.4
+  osName: RHEL 6
+
+
+rundeck_client_5.foo.bar:
+  tags: 'test'
+  osFamily: unix RHEL
+  username: root
+  osArch: x86_64
+  osVersion: 2.6.32-431.el6.x86_64
+  description: cops test server
+  nodename: 
+  hostname: 172.17.0.5
+  osName: RHEL 6
+
+
+rundeck_client_6.foo.bar:
+  tags: 'test'
+  osFamily: unix RHEL
+  username: root
+  osArch: x86_64
+  osVersion: 2.6.32-431.el6.x86_64
+  description: cops test server
+  nodename: 
+  hostname: 172.17.0.6
+  osName: RHEL 6
+
+
+rundeck_client_7.foo.bar:
+  tags: 'test'
+  osFamily: unix RHEL
+  username: root
+  osArch: x86_64
+  osVersion: 2.6.32-431.el6.x86_64
+  description: cops test server
+  nodename: 
+  hostname: 172.17.0.7
+  osName: RHEL 6
+
+
+rundeck_client_8.foo.bar:
+  tags: 'test'
+  osFamily: unix RHEL
+  username: root
+  osArch: x86_64
+  osVersion: 2.6.32-431.el6.x86_64
+  description: cops test server
+  nodename: 
+  hostname: 172.17.0.8
+  osName: RHEL 6
+
+
+rundeck_client_9.foo.bar:
+  tags: 'test'
+  osFamily: unix RHEL
+  username: root
+  osArch: x86_64
+  osVersion: 2.6.32-431.el6.x86_64
+  description: cops test server
+  nodename: 
+  hostname: 172.17.0.9
+  osName: RHEL 6
+
+
+rundeck_client_10.foo.bar:
+  tags: 'test'
+  osFamily: unix RHEL
+  username: root
+  osArch: x86_64
+  osVersion: 2.6.32-431.el6.x86_64
+  description: cops test server
+  nodename: 
+  hostname: 172.17.0.10
+  osName: RHEL 6
+
+
+rundeck_client_11.foo.bar:
+  tags: 'test'
+  osFamily: unix RHEL
+  username: root
+  osArch: x86_64
+  osVersion: 2.6.32-431.el6.x86_64
+  description: cops test server
+  nodename: 
+  hostname: 172.17.0.11
+  osName: RHEL 6
+
+
+rundeck_client_12.foo.bar:
+  tags: 'test'
+  osFamily: unix RHEL
+  username: root
+  osArch: x86_64
+  osVersion: 2.6.32-431.el6.x86_64
+  description: cops test server
+  nodename: 
+  hostname: 172.17.0.12
+  osName: RHEL 6
+
+
+rundeck_client_13.foo.bar:
+  tags: 'test'
+  osFamily: unix RHEL
+  username: root
+  osArch: x86_64
+  osVersion: 2.6.32-431.el6.x86_64
+  description: cops test server
+  nodename: 
+  hostname: 172.17.0.13
+  osName: RHEL 6
+
+
+rundeck_client_14.foo.bar:
+  tags: 'test'
+  osFamily: unix RHEL
+  username: root
+  osArch: x86_64
+  osVersion: 2.6.32-431.el6.x86_64
+  description: cops test server
+  nodename: 
+  hostname: 172.17.0.14
+  osName: RHEL 6
+
+
+rundeck_client_15.foo.bar:
+  tags: 'test'
+  osFamily: unix RHEL
+  username: root
+  osArch: x86_64
+  osVersion: 2.6.32-431.el6.x86_64
+  description: cops test server
+  nodename: 
+  hostname: 172.17.0.15
+  osName: RHEL 6
+
+
+rundeck_client_16.foo.bar:
+  tags: 'test'
+  osFamily: unix RHEL
+  username: root
+  osArch: x86_64
+  osVersion: 2.6.32-431.el6.x86_64
+  description: cops test server
+  nodename: 
+  hostname: 172.17.0.16
+  osName: RHEL 6
+
+
+rundeck_client_17.foo.bar:
+  tags: 'test'
+  osFamily: unix RHEL
+  username: root
+  osArch: x86_64
+  osVersion: 2.6.32-431.el6.x86_64
+  description: cops test server
+  nodename: 
+  hostname: 172.17.0.17
+  osName: RHEL 6
+
+
+rundeck_client_18.foo.bar:
+  tags: 'test'
+  osFamily: unix RHEL
+  username: root
+  osArch: x86_64
+  osVersion: 2.6.32-431.el6.x86_64
+  description: cops test server
+  nodename: 
+  hostname: 172.17.0.18
+  osName: RHEL 6
+
+
+rundeck_client_19.foo.bar:
+  tags: 'test'
+  osFamily: unix RHEL
+  username: root
+  osArch: x86_64
+  osVersion: 2.6.32-431.el6.x86_64
+  description: cops test server
+  nodename: 
+  hostname: 172.17.0.19
+  osName: RHEL 6
+
+
+rundeck_client_20.foo.bar:
+  tags: 'test'
+  osFamily: unix RHEL
+  username: root
+  osArch: x86_64
+  osVersion: 2.6.32-431.el6.x86_64
+  description: cops test server
+  nodename: 
+  hostname: 172.17.0.20
+  osName: RHEL 6
+
+
+rundeck_client_21.foo.bar:
+  tags: 'test'
+  osFamily: unix RHEL
+  username: root
+  osArch: x86_64
+  osVersion: 2.6.32-431.el6.x86_64
+  description: cops test server
+  nodename: 
+  hostname: 172.17.0.21
+  osName: RHEL 6
+
+
+rundeck_client_22.foo.bar:
+  tags: 'test'
+  osFamily: unix RHEL
+  username: root
+  osArch: x86_64
+  osVersion: 2.6.32-431.el6.x86_64
+  description: cops test server
+  nodename: 
+  hostname: 172.17.0.22
+  osName: RHEL 6
+
+
+rundeck_client_23.foo.bar:
+  tags: 'test'
+  osFamily: unix RHEL
+  username: root
+  osArch: x86_64
+  osVersion: 2.6.32-431.el6.x86_64
+  description: cops test server
+  nodename: 
+  hostname: 172.17.0.23
+  osName: RHEL 6
+
