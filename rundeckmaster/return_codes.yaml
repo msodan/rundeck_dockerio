@@ -1,0 +1,35 @@
+- id: 01b1158b-c520-4e7a-b776-0ca1b08e96d1
+  project: PuppetIntegration
+  loglevel: INFO
+  sequence:
+    keepgoing: true
+    strategy: node-first
+    commands:
+    - script: |
+        #!/usr/bin/perl
+
+        use warnings;
+        use strict;
+
+        my $code = int(rand(2));
+
+        print "Hello Inovex Team :=)\n";
+
+        print "Our return code is: $code\n";
+
+        if ($code) {
+            print "We are aborting\n";
+            } else {
+            print "Lets go further\n";
+        }
+        exit $code;
+  description: ''
+  name: Return codes
+  uuid: 01b1158b-c520-4e7a-b776-0ca1b08e96d1
+  nodefilters:
+    dispatch:
+      threadcount: 1
+      keepgoing: false
+      excludePrecedence: false
+      rankOrder: ascending
+    filter: .*

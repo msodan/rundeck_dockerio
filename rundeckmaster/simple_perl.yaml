@@ -1,0 +1,28 @@
+- id: 16f1ff80-27c5-4daf-a78d-b66ad9170d7f
+  project: PuppetIntegration
+  loglevel: INFO
+  sequence:
+    keepgoing: false
+    strategy: node-first
+    commands:
+    - script: |
+        #!/usr/bin/perl -w
+
+        use strict;
+        use Sys::Hostname;
+
+        my $hostname = hostname;
+
+        print "Yeah we are on host $hostname\n";
+
+        exit 0;
+  description: ''
+  name: Simple Perl test
+  uuid: 16f1ff80-27c5-4daf-a78d-b66ad9170d7f
+  nodefilters:
+    dispatch:
+      threadcount: 1
+      keepgoing: false
+      excludePrecedence: false
+      rankOrder: ascending
+    filter: .*

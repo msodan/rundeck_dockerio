@@ -1,0 +1,31 @@
+- id: cbe96fb1-8fbd-457c-9654-0f192254ded8
+  project: PuppetIntegration
+  loglevel: INFO
+  sequence:
+    keepgoing: false
+    strategy: node-first
+    commands:
+    - script: |
+        #!/bin/bash
+
+        LIMIT=40
+        HOST=$(hostname)
+        FS=$(df -h | awk 'NR > 1 {sub( "%", "", $5); print $5 }' |awk '$1>40')
+
+        if [ "${FS}" > "${LIMIT}" ]; then
+              echo "FS Usage is over $LIMIT, please check ${HOST}"
+         else
+        		echo "Everything ok ..."
+        fi
+
+        exit 0
+  description: ''
+  name: Check FS Usage
+  uuid: cbe96fb1-8fbd-457c-9654-0f192254ded8
+  nodefilters:
+    dispatch:
+      threadcount: 1
+      keepgoing: false
+      excludePrecedence: true
+      rankOrder: ascending
+    filter: .*
