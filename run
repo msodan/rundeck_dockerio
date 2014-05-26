@@ -2,9 +2,12 @@
 
 #start dns server
 dnsmasq/run
+sleep 2
 
 #start rundeckmaster
 rundeckmaster/run
+sleep 2
 
 #start rundeckclients
 rundeckclient/run
+
