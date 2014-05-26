@@ -45,4 +45,23 @@ RUN dpkg -i /root/rundeck-2.1.1-1-GA.deb
 
 ADD rundeck-config.properties /etc/rundeck/rundeck-config.properties
 
+RUN rd-project --action create --project PuppetIntegration
+RUN rd-project --action create --project YAMLIntegration
+RUN rd-jobs load --format yaml --file /root/check_fs_usage.yaml --project PuppetIntegration
+RUN rd-jobs load --format yaml --file /root/return_codes.yaml --project PuppetIntegration
+RUN rd-jobs load --format yaml --file /root/simple_perl.yaml --project PuppetIntegration
+
+RUN echo '#!/bin/bash' > /root/start
+RUN echo '/etc/init.d/puppetmaster start' >> /root/start
+RUN echo '/etc/init.d/rundeckd start' >> /root/start
+RUN echo 'puppet-rundeck &' >> /root/start
+
+RUN chmod +x /root/start
+
+RUN echo '#!/bin/bash' > /root/install_puppet-rundeck
+RUN echo 'gem install puppet-rundeck' >> /root/install_puppet-rundeck
+
+RUN chmod +x /root/install_puppet-rundeck
+
 CMD /usr/sbin/sshd -D
+
