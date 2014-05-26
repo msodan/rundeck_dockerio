@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#start in reverse order
+docker start $(docker ps -a -q |tac)
+
