@@ -2,6 +2,6 @@
 only through the gui
 
 * if importing jobs through rd-jobs and starting the jobs, sometimes the job will fail.
-workaround is to define the jobs again in the gui.
+the nodes must defined again .... ????
 
 * 
