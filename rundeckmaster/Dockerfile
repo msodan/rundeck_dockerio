@@ -17,6 +17,8 @@ RUN apt-get install -y \
  wget \
  openjdk-7-jre
 
+RUN gem install --no-rdoc --no-ri puppet-rundeck
+
 RUN mkdir /var/run/sshd
 
 RUN useradd -d /var/lib/rundeck -m -s /bin/bash rundeck
@@ -55,22 +57,14 @@ RUN echo 'rd-project --action create --project YAMLIntegration --project.ssh-key
 RUN echo 'rd-jobs load --format yaml --file /root/check_fs_usage.yaml --project YAMLIntegration' >> /root/rundeck_pr_and_jobs
 RUN echo 'rd-jobs load --format yaml --file /root/return_codes.yaml --project YAMLIntegration' >> /root/rundeck_pr_and_jobs
 RUN echo 'rd-jobs load --format yaml --file /root/simple_perl.yaml --project YAMLIntegration' >> /root/rundeck_pr_and_jobs
-
 RUN echo 'rd-project --action create --project YAMLIntegrationTagged --project.ssh-keypath=/var/lib/rundeck/.ssh/id_rsa --resources.source.1.config.file=/var/lib/rundeck/nodes_tagged.yaml' >> /root/rundeck_pr_and_jobs
-
 RUN chmod +x /root/rundeck_pr_and_jobs
 
 RUN echo '#!/bin/bash' > /root/start
 RUN echo '/etc/init.d/puppetmaster start' >> /root/start
 RUN echo '/etc/init.d/rundeckd start' >> /root/start
 RUN echo 'puppet-rundeck &' >> /root/start
-
 RUN chmod +x /root/start
-
-RUN echo '#!/bin/bash' > /root/install_puppet-rundeck
-RUN echo 'gem install puppet-rundeck' >> /root/install_puppet-rundeck
-
-RUN chmod +x /root/install_puppet-rundeck
 
 CMD /usr/sbin/sshd -D
 
